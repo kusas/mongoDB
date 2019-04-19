@@ -55,7 +55,6 @@ describe('create user with sub - document', () => {
 				return User.findOne({name: 'joe1'});
 			})
 			.then((user) => {
-				console.log(user);
 				assert(user.posts.length === 0);
 				done();
 			});
